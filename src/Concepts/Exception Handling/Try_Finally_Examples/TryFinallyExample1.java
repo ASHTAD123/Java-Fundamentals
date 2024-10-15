@@ -1,20 +1,14 @@
+package Try_Finally_Examples;
 public class TryFinallyExample1 {
-    public static void main (String[] args) 
-    {
+    public static void main (String[] args) {
          
-        try
-        {
-            String str = "123";
-             
+        try {
+            String str = "123";     
             int num = Integer.parseInt(str);
-             
-            // this statement will execute
-            // as no any exception is raised by above statement
             System.out.println("Inside try block");
         }
          
-        finally
-        {
+        finally {
             System.out.println("finally block executed");
         }
          

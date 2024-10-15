@@ -1,3 +1,4 @@
+package Try_Catch_Examples;
 //Control flow in try-catch when exception is not handeled properly
 class TryCatchExample1 {
 

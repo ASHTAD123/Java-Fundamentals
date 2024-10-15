@@ -1,3 +1,4 @@
+package Type_Of_Exceptions;
 public class NullPointerExceptionExample {
  
     @SuppressWarnings("null")

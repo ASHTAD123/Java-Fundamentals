@@ -1,3 +1,5 @@
+package Type_Of_Exceptions;
+
 class ArithmeticExceptionExample {
 
     public static void main(String[] args) {
