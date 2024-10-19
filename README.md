@@ -11,7 +11,9 @@ Topics Covered :
 6. Exception Handling
 7. Initializer Block
 8. Collections
-
+9. Java 8 Features
+10. Multi-threading
+    
 Upcoming :
-1. Java 8 Features
-2. Multi-threading
+Stay Tuned !!
+
