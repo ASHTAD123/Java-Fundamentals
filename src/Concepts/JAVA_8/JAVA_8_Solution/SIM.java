@@ -3,10 +3,11 @@
  * 
  * SOLVES ISSUE WHICH WAS UPTO JAVA 1.7
  * 
+ * BY USING DEFAULT METHODS 
+ * 
  */
-package Concepts.JAVA_8;
+package Concepts.JAVA_8.JAVA_8_Solution;
 
-//After Java 7 solution using default method
 public interface SIM {
     
     void call();
