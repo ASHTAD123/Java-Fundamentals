@@ -9,8 +9,7 @@ public class Vector_methods {
 
 	public static void main(String[] args) {
 
-		// Ensures that this collection contains the specified element (optional
-		// operation).
+		// Ensures that this collection contains the specified element (optional operation).
 		// Returns true if this collection changed as a result of the call.
 		// (Returns false if this collection does not permit duplicates and
 		// already contains the specified element.)
