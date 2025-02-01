@@ -15,8 +15,10 @@ public class ReverseString {
 
         StringBuilder out = new StringBuilder();
 
+        //CONVERT INTO CHAR ARRAY
         char[] chars = input.toCharArray();
 
+        //APPEND STRING IN STRING BUILDER
         for(int i=chars.length-1; i >=0 ; i--){
             out.append(chars[i]);
         }

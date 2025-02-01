@@ -2,7 +2,7 @@ public class Palindrome {
    
    public static void main(String[] args) {
    
-    checkPalindromeString("ABA");
+    checkPalindromeString("ABADSA");
    
    }
    static boolean  checkPalindromeString(String input) {
