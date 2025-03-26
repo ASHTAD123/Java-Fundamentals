@@ -4,7 +4,7 @@ class find_first_non_repeating_char {
     static char nonRepeatingChar(String s) {
         
         int n = s.length();
-        
+
         for (int i = 0; i < n; i++) {
         
             boolean found = false;

@@ -8,15 +8,14 @@ public class dec_to_binary_count_consec_ones {
        
        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        int n = Integer.parseInt(bufferedReader.readLine().trim());
-        
+        int n = Integer.parseInt(bufferedReader.readLine().trim());  
         int count = 0;
         int max = 0;
         
         while(n>0){
             
             int a = n %2; //remainder
-            
+
             if(a==1){
                 count++;
                 
@@ -25,8 +24,7 @@ public class dec_to_binary_count_consec_ones {
                 }
             }else{
                 count = 0 ;
-            }
-            
+            }    
             n = n/2;
         }
         
