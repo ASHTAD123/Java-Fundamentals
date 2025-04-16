@@ -16,18 +16,15 @@ public class stream {
         list.add(2);
         list.add(3);
         list.add(4);
+        list.add(2);
+        list.add(19);
+     
+        List<Integer> filteredList = list.stream()
+                                .filter(i-> i%2==0)
+                                .collect(Collectors.toList());
 
-        for(Integer i : list){
-            if( i % 2 ==0){
-                listEven.add(i);
-            }
-        }
 
-
-        Stream<Integer> intStream = list.stream();
-
-        List<Integer> l = intStream.filter(i-> i%2==0).collect(Collectors.toList());
-        System.out.println(l);
+        System.out.println(filteredList);
         
     }
 }
