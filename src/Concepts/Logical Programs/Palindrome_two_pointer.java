@@ -1,30 +1,36 @@
 public class Palindrome_two_pointer {
-    
-    public static boolean isPalindrome(String s) {
-    
-    int i=0;
-    int j =s.length()-1;
 
-    while(i<j){
-       
-        if(s.charAt(i) !=s.charAt(j)){
-            return false;
+  public static boolean isPalindrome(int x) {
+   
+    String s = String.valueOf(x);
+    int n = s.length()-1;
+ 
+ if(x>=Math.pow(-2,31) && x<=Math.pow(2,31)-1){
+        
+         for(int i=n; i>=0; i--) {
+
+              for( int j=0; j<=n ; j++){
+
+                 if(s.charAt(i) == s.charAt(j) && i==0){      
+                     return true;
+                 }else{
+                   continue;
+                 }
         }
     }
-    return true;
+ }
+    return false;
 }
 
-public static void main(String[] args) {
-      
+  public static void main(String[] args) {
+
     // Input strings
-    String s1 = "aba";
-    s1 = s1.toLowerCase();
+  int p =-121;
 
-    if(isPalindrome(s1)){
-        System.out.println("\"" + s1 + "\" is a palindrome.");
-    }else{
-        System.out.println("\"" + s1 + "\" is not palindrome.");
+    if (isPalindrome(p)) {
+      System.out.println("\"" + p + "\" is a palindrome.");
+    } else {
+      System.out.println("\"" + p + "\" is not palindrome.");
     }
-    
-}
+  }
 }
