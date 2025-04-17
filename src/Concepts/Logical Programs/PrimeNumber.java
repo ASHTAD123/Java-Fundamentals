@@ -7,7 +7,7 @@ public class PrimeNumber {
             return false;
 
         // Check from 2 to n-1
-        for (int i = 2; i < n; i++)
+        for (int i = 2; i <=Math.sqrt(n); i++)
             if (n % i == 0)
                 return false;
 
@@ -18,18 +18,9 @@ public class PrimeNumber {
     // Driver Program
     public static void main(String args[]){
 
-                 int N = 100; 
             System.out.println(isPrime(11));
 
-            System.out.println(isPrime(15));
-
-            for(int i=1; i<=N; i++){
-               
-                if(isPrime(i)) {
-                    System.out.print(i + " ");
-                }
-            }
- 
+            System.out.println(isPrime(15)); 
 
     }
 }
