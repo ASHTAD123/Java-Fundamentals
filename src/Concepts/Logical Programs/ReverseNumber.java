@@ -2,7 +2,7 @@ public class ReverseNumber {
     
     public static void main(String[] args) {
         
-        int number=434345152;
+        int number=432;
         int reverseNumber=0;
 
         while(number!=0){
