@@ -11,7 +11,8 @@ public class PalindromeNumber {
       x = x / 10;
     }
 
-    if (dup == revNum) return true;
+    if(dup == revNum) 
+       return true;
 
     return false;
   }

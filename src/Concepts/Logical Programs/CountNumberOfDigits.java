@@ -9,11 +9,15 @@ public class CountNumberOfDigits {
       
         public int countDigit(int n) {
             int count =0;
+            
+            if(n==0) return 1;
+                
+            n = Math.abs(n);  // Handle negative numbers
           
             while(n>0){
             //    int lastDigit = n % 10;
-                count++;
                 n = n / 10;
+                count++;
                 System.out.println(n);
             }
     
