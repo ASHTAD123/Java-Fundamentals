@@ -14,9 +14,9 @@ class Horlicks extends Hindustan_Uniliver {
     
     Horlicks (){
            
-      //  System.out.println("Horlicks Constructor");
+      //  System.out.println("Horlicks Constructor"); super();
         System.out.println("------Calling super class constructor---------");
-        super();
+       
     }
 }
 class KwalityWalls extends Hindustan_Uniliver{

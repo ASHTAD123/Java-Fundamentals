@@ -34,9 +34,9 @@ public class JVM_Implementation {
 }
 class WindowsJVM extends JVM_Implementation{
 
-    public WindowsJVM(){
+    public WindowsJVM(){       super();//calling super class constructor
         System.out.println("Calling Super Class Constructor from Sub-class Constructor");
-        super();//calling super class constructor
+ 
     }
     //variable hiding
     //same name as super class variable

@@ -26,8 +26,12 @@ class Child extends Parent{
     
     
     public static void main(String[] args) {
+       
         Child childObject = new Child();
         childObject.behaviour();
+
+        Parent parent = new Child();
+        parent.behaviour();
     }
     
 }
