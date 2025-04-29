@@ -2,27 +2,26 @@ public class checkForAmstrongNumber {
     
     public static void main(String[] args) {
      
-       System.out.println(isAmstrongNumber(372));
+       System.out.println(isAmstrongNumber(371));
     }
 
     public static boolean isAmstrongNumber(int number){
      
-        int rev =0;
-        int sum=0;
-        int original = number;
-        
-        while(number!=0){
+        int k = String.valueOf(number).length();
 
-            int digit = number % 10; //last digit
+        int sum = 0;
 
-            sum = sum + (digit*digit*digit);
+        int n = number;
 
-         number = number / 10; //number leftover after removing last digit
+        while(n>0){
+
+            int ld = n % 10;
+
+            sum += Math.pow(ld, k);
+
+            n = n / 10;
         }
 
-        if (original==sum) {
-            return true;
-        }
-        return false;
+        return sum == number ? true : false;
     }
 }

@@ -1,4 +1,4 @@
-public class printAllDivisors {
+public class printAllDivisors_optimal_approach {
 
   public static void main(String[] args) {
 
