@@ -1,3 +1,5 @@
+package Interview_questions;
+
 class find_first_non_repeating_char {
   
 
@@ -5,6 +7,7 @@ class find_first_non_repeating_char {
         
         int n = s.length();
 
+        //loop through the string
         for (int i = 0; i < n; i++) {
         
             boolean found = false;

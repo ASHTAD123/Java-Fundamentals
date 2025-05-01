@@ -1,3 +1,4 @@
+package Practice_String_Questions;
 public class SumAllElementsArray {
     
     public static void main(String[] args) {

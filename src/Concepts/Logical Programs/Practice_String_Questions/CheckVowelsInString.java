@@ -1,3 +1,4 @@
+package Practice_String_Questions;
 public class CheckVowelsInString {
     
 	public static void main(String[] args) {
