@@ -1,3 +1,6 @@
+package DSA.Basic_Math_Problems;
+
+
 public class GCD_of_numbers {
     
   public static void main(String[] args) {

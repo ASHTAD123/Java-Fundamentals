@@ -1,3 +1,5 @@
+package DSA.Basic_Math_Problems;
+
 public class GCD_of_numbers_optimal_approach {
  
     public static void main(String[] args) {

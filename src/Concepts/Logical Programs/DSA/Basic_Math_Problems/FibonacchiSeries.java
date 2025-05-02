@@ -1,3 +1,5 @@
+package DSA.Basic_Math_Problems;
+
 public  class FibonacchiSeries {
     
     //function to N FibonacchiSeries

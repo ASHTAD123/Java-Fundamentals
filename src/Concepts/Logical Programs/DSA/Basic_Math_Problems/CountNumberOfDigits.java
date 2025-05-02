@@ -1,3 +1,5 @@
+package DSA.Basic_Math_Problems;
+
 public class CountNumberOfDigits {
        
         public static void main(String[] args) {
