@@ -5,7 +5,7 @@ public class divide_string_into_n_equal_parts {
     public static void main(String[] args) {
         
          // length of string is 28
-         String str = "Aa_sim";
+         String str = "Asim";
          divideString(str,2);
     }
 
@@ -21,11 +21,11 @@ public class divide_string_into_n_equal_parts {
         }
 
         partSize = strLen / numberOfparts;
-        System.out.println("PART SIZE" +partSize);
+        System.out.println("PART SIZE :" +partSize);
 
         for(int i=0; i< strLen; i++){
 
-            if(i%partSize==0){
+            if( i % partSize==0){
                 System.out.println();
             }
             System.out.print(str.charAt(i));
