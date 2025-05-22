@@ -32,7 +32,7 @@ public class Variables_1 {
    // int 3DPointClass;
     //int hollywoord@vine;
     //int *$coffee;
-    //int public;
+    //  int public;
 
 
     public static void main(String[] args) {
