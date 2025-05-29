@@ -29,6 +29,11 @@ class  Example_1{
         System.out.println(z);
     }
  
+    //Learnt new way of loop
+    int a=2;
+    while(a++ <10){
+      System.out.println(a);
+    }
  }
 }
 
