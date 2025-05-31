@@ -35,9 +35,12 @@ public class StringBuilderMethods {
         // sb3.deleteCharAt(5);//exception
         System.out.println(sb3);
 
+        //reverse
+        sb2.reverse();
+        System.out.println(sb2);
 
-
-
+        //String Builder to String
+        String x = sb2.toString();
 
 
     }
