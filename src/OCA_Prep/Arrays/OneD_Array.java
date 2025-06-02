@@ -1,5 +1,7 @@
 package OCA_Prep.Arrays;
 
+import java.util.Arrays;
+
 public class OneD_Array {
     
     public static void main(String[] args) {
@@ -36,6 +38,35 @@ public class OneD_Array {
 
         // againStrings[0] = new StringBuilder(); Doesn't compile
 
-         objects[0] = new StringBuilder();//careful ArrayStoreException
+      //  objects[0] = new StringBuilder();//careful ArrayStoreException
+
+        // Searching
+
+        //tim sort -merge sort +insertion sort - reference types
+        //dual pivot quick sort
+        int sortNumbers[] ={6,9,1};
+        Arrays.sort(sortNumbers,1,3);
+        System.out.println(Arrays.toString(sortNumbers));
+
+        //Lexographically sorts the strings
+        String[] strings1 = {"10","9","100"};
+        Arrays.sort(strings1);
+        System.out.println(Arrays.toString(strings1));
+
+        //Searching
+        //binary search only works on sorted array
+        //if we pass un-sorted array then result is unknown
+        int numbers3[] = {2,4,5};
+        System.out.println(Arrays.binarySearch( numbers3, 4));
+        System.out.println(Arrays.binarySearch( numbers3, 8));
+        //returns value and negates the position where it should be present & subtracts -1
+        // so 8 should be present at lastIndex-1
+    
+    
+    
+    
+    
+    
+    
     }
 }
