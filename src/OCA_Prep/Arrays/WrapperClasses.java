@@ -1,6 +1,9 @@
 package OCA_Prep.Arrays;
 import java.util.ArrayList;
-import javax.swing.plaf.basic.BasicBorders;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 
 public class WrapperClasses {
     
@@ -23,7 +26,7 @@ public class WrapperClasses {
 
         System.out.println(heights.get(0));
 
-        int result = heights.get(0);
+     //   int result = heights.get(0);
         Integer result_1 = heights.get(0);
 
         System.out.println(heights);
@@ -33,7 +36,7 @@ public class WrapperClasses {
             System.out.println(heights.get(a) + " ");
         }
 
-        ArrayList friends = new ArrayList<>();
+        ArrayList<String> friends = new ArrayList<String>();
         friends.add("FRIEND 1");
         friends.add("FRIEND 2");
         friends.add("FRIEND 3");
@@ -42,12 +45,26 @@ public class WrapperClasses {
         String birdsArray[] = friends.toArray(new String[0]);
 
 
+        //Converting arrays to arraylist(also called as backed list)
+        //we cannot add more elements in arraylist which is created by arrays
+        //list becomes of fixed size as arrays have a fixed size
+        String[] birds ={"Hawk","Robin","Parrot"};
+
+        List<String> birdsBackedList = Arrays.asList(birds);
+       
+        birdsBackedList.set(0, "newBird");
+        System.out.println();
+
+        System.out.println(birdsBackedList);
+        System.out.println(Arrays.toString(birds));//change also refelected in birds array
 
 
+        //Sorting
+        List<Integer> asList = Arrays.asList(50,2,100,10);
 
+        Collections.sort(asList);
 
-
-
+        System.out.println(asList);
 
     }
 }
