@@ -1,9 +1,13 @@
 package OCA_Prep.Date_Time_API;
 
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Month;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 
 public class Example_1 {
     
@@ -51,19 +55,53 @@ public class Example_1 {
         System.out.println(dates);
         System.out.println(dates.plusWeeks(5));
 
-        LocalTime times = LocalTime.of(5, 15f);
+        LocalTime times = LocalTime.of(5, 15);
+
+        //Method chaining
+        LocalDateTime dateTimes_1 = LocalDateTime.of(
+                                    LocalDate.of(9999, 1,20),
+                                    LocalTime.of(15,15))
+                                    .minusDays(1).minusHours(10).minusSeconds(30);
+
+                                    System.out.println(dateTimes_1);
 
 
+      //Period
+      Period period = Period.ofYears(1);
+      Period customPeriod = Period.of(0, 1, 30);
+
+      period.ofMonths(1).ofDays(0);//possible but will not work because methods are static
+
+       performAnimalEnrichment( LocalDate.of(2015, Month.JANUARY, 1), LocalDate.of(2015, Month.MARCH, 30),customPeriod);
 
 
+       //Duration
+       Duration minutes = Duration.ofMinutes(10);
+       minutes.plus(minutes);
 
+       //formatting dates nd time
+       System.out.println("Days of month : " + dates.getDayOfMonth());
+       System.out.println("Days of week : " +dates.getDayOfWeek());
+       System.out.println("Days of year : " +dates.getDayOfYear());
 
+      //Date Time Formatter
+      DateTimeFormatter shortDateTime = DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT);
+      System.out.println(shortDateTime.format(dateTime_1));
+      System.out.println(shortDateTime.format(dates));//dates
+      // System.out.println(shortDateTime.format(times));  //java.time.temporal.UnsupportedTemporalTypeException
 
-
-
-
-
-
+      System.out.println(dateTime_1.format(shortDateTime));
 
     }
+
+    
+      static void performAnimalEnrichment(LocalDate start,LocalDate end,Period period){
+
+        LocalDate upto = start;
+
+        while(upto.isBefore(end)){
+          System.out.println("Give new toy : " +upto);
+          upto = upto.plus(period);
+        }
+      }
 }
