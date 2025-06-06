@@ -1,6 +1,6 @@
 package OCA_Prep.Strings;
 
-public class exmaple_1 {
+public class Exmaple_1 {
     
     public static void main(String[] args) {
         

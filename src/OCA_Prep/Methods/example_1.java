@@ -1,6 +1,6 @@
 package OCA_Prep.Methods;
 
-public class example_1 {
+public class Example_1 {
     
 
     public void walk1(){}
@@ -89,7 +89,7 @@ public class example_1 {
     public static void main(String[] args) {
         
         System.out.println("___MAIN METHOD___");
-        example_1 e1 = new example_1();
+        Example_1 e1 = new Example_1();
        
       //  System.out.println(e1.name2());
 
