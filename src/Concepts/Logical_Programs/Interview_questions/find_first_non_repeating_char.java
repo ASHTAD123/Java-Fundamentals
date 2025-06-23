@@ -27,7 +27,7 @@ class find_first_non_repeating_char {
     }
 
     public static void main(String[] args) {
-        String s = "racecar";
+        String s = "RacEcaR";
       
         System.out.println(nonRepeatingChar(s));
     }

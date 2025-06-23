@@ -37,6 +37,15 @@ public class Variables_1 {
 
     public static void main(String[] args) {
         
+        double d = 0XFace;
+        System.out.println(d);
+
+        char c =0x2ef;
+        System.out.println(c);
+
+        char c1 =34;
+        System.out.println(c1);
+
     }
 
 }

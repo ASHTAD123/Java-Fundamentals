@@ -1,4 +1,4 @@
-package Interview_questions;
+ package Interview_questions;
 
 public class divide_string_into_n_equal_parts {
     
