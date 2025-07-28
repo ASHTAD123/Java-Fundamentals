@@ -15,12 +15,12 @@ public class Multi_Dimension_Array {
         rectangle[1] = new String[]{"BNM","BVX"};
         rectangle[2] = new String[]{"MKL","CWE"};
     
-        System.out.println(rectangle[1][1]);
+        //System.out.println(rectangle[1][1]);
     
         
         for(int i=0 ; i<rectangle.length; i++){
 
-            for(int j=0; j<rectangle[0].length; j++){
+            for(int j=0; j<rectangle[i].length; j++){
                 System.out.print(rectangle[i][j] +"\t");
             }
 
@@ -28,14 +28,27 @@ public class Multi_Dimension_Array {
         }
     
 
-        for(String[] element :rectangle){
+        // for(String[] element :rectangle){
 
-              for(String innerElement :element){
+        //       for(String innerElement :element){
 
-                    System.out.print(innerElement + "\t");
-             }
+        //             System.out.print(innerElement + "\t");
+        //      }
             
-        }
+        // }
         
+
+        int[][] intArr = new int[3][3];
+        intArr[0][0]= 1;
+        intArr[0][1]= 2;
+        intArr[0][2]= 3;
+        intArr[1][0]= 2;
+        intArr[1][1]= 3;
+        intArr[1][2]= 4;
+        intArr[2][0]= 4;
+        intArr[2][1]= 4;
+        intArr[2][2]= 4;
+
+
     }
 }
