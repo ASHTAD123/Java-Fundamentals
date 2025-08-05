@@ -12,7 +12,7 @@ class TryCatchExample {
         //exception is thrown at this line
         int i = arr[4];
        
-        System.out.println("Inside the catch block");
+        System.out.println("Inside the try block");
     
     }catch(ArrayIndexOutOfBoundsException ex){
         System.out.println("Caught an ArrayIndexOutOfBoundsException");
