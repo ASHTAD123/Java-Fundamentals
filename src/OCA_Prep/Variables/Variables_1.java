@@ -2,6 +2,25 @@ package OCA_Prep.Variables;
 
 public class Variables_1 {
 
+    //legal identifiers
+    int _a;
+    int $c;
+    int __________2_w;
+    int _$;
+    int this_is_legal_detailed_name_of_an_identifier;
+    int $_3;
+    int $_2we;
+
+    /* Invalid Types
+     * 
+     * int :b;
+     * int -d;
+     * int e#;
+     * int .f;
+     * int 7g;
+     */
+
+
     String s1, s2;
     String s3= "yes" , s4="no";
 
