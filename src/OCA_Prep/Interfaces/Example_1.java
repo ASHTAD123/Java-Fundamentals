@@ -38,17 +38,10 @@ public interface Example_1 {
   //implicity public static final
   //cannot declare instance variables
   int d=20;
-
-  // d=30;
+ // d=30;
 
   // interface methods cannot be final
   //   final int m();
-
-  // interface methods cannot be strictfp
-    // strictfp int m();
-
-  // interface methods cannot be native
-  //   native int m();
   
   // in java 8 main method is allowed in interfaces
   public static void main(String[] args) {
