@@ -22,7 +22,7 @@ public interface Example_Default_methods {
     //default void method3();
 
 
-
+     
 
 
 }
