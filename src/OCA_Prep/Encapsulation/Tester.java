@@ -8,12 +8,5 @@ public class Tester {
 
         Student s = new Student();
         s.setMarks(-0);
-
-
-
-
-
-
-
     }
 }

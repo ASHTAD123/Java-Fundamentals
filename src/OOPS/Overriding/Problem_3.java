@@ -1,4 +1,4 @@
-package OCA_Prep.OOPS.Overriding;
+packageOOPS.Overriding;
 
 public class Problem_3 {
     
